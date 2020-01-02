@@ -1,8 +1,9 @@
-package dto;
+package com.cihankurban.dto;
 
 import java.util.Date;
 
-import entity.IssueStatus;
+import com.cihankurban.entity.IssueStatus;
+
 import lombok.Data;
 
 @Data

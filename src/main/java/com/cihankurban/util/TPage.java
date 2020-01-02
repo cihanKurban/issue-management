@@ -1,4 +1,4 @@
-package util;
+package com.cihankurban.util;
 
 import java.util.List;
 

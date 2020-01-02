@@ -1,12 +1,12 @@
-package service.impl;
+package com.cihankurban.service.impl;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import entity.IssueHistory;
-import repository.IssueHistoryRepository;
-import service.IssueHistoryService;
+import com.cihankurban.entity.IssueHistory;
+import com.cihankurban.repository.IssueHistoryRepository;
+import com.cihankurban.service.IssueHistoryService;
 
 @Service
 public class IssueHistoryServiceImpl implements IssueHistoryService {

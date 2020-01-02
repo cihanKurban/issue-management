@@ -1,9 +1,9 @@
-package service;
+package com.cihankurban.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import entity.IssueHistory;
+import com.cihankurban.entity.IssueHistory;
 
 public interface IssueHistoryService {
 

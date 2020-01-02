@@ -1,22 +1,26 @@
-package service.impl;
+package com.cihankurban.service.impl;
 
 import java.util.List;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import entity.Project;
-import repository.ProjectRepository;
-import service.ProjectService;
+import com.cihankurban.dto.ProjectDto;
+import com.cihankurban.entity.Project;
+import com.cihankurban.repository.ProjectRepository;
+import com.cihankurban.service.ProjectService;
 
 @Service
 public class ProjectServiceImpl implements ProjectService {
 
 	private final ProjectRepository projectRepository;
+	private final ModelMapper modelMapper;
 
-	public ProjectServiceImpl(ProjectRepository projectRepository) {
+	public ProjectServiceImpl(ProjectRepository projectRepository, ModelMapper modelMapper) {
 		this.projectRepository = projectRepository;
+		this.modelMapper = modelMapper;
 	}
 
 	@Override
@@ -28,8 +32,9 @@ public class ProjectServiceImpl implements ProjectService {
 	}
 
 	@Override
-	public Project getById(Long id) {
-		return projectRepository.getOne(id);
+	public ProjectDto getById(Long id) {
+		Project p = projectRepository.getOne(id);
+		return modelMapper.map(p, ProjectDto.class);// Project tipindeki p'yi mapleyip ProjectDto'ya çevirdik.
 	}
 
 	@Override

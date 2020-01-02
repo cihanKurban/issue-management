@@ -1,8 +1,8 @@
-package repository;
+package com.cihankurban.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import entity.Issue;
+import com.cihankurban.entity.Issue;
 
 public interface IssueRepository extends  JpaRepository<Issue , Long> {
 

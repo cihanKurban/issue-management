@@ -1,4 +1,4 @@
-package entity;
+package com.cihankurban.entity;
 
 import java.util.List;
 

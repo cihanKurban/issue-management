@@ -1,9 +1,9 @@
-package service;
+package com.cihankurban.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import dto.IssueDto;
+import com.cihankurban.dto.IssueDto;
 
 public interface IssueService {
 

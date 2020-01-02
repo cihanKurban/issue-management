@@ -1,12 +1,12 @@
-package service.impl;
+package com.cihankurban.service.impl;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import entity.User;
-import repository.UserRepository;
-import service.UserService;
+import com.cihankurban.entity.User;
+import com.cihankurban.repository.UserRepository;
+import com.cihankurban.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

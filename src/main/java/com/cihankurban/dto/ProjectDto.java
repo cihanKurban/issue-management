@@ -1,4 +1,4 @@
-package dto;
+package com.cihankurban.dto;
 
 import lombok.Data;
 

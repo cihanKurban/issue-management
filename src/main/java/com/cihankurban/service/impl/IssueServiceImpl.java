@@ -1,4 +1,4 @@
-package service.impl;
+package com.cihankurban.service.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,10 +6,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import dto.IssueDto;
-import entity.Issue;
-import repository.IssueRepository;
-import service.IssueService;
+import com.cihankurban.dto.IssueDto;
+import com.cihankurban.entity.Issue;
+import com.cihankurban.repository.IssueRepository;
+import com.cihankurban.service.IssueService;
 
 @Service
 public class IssueServiceImpl implements IssueService {

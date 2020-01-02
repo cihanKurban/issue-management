@@ -1,8 +1,8 @@
-package repository;
+package com.cihankurban.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import entity.IssueHistory;
+import com.cihankurban.entity.IssueHistory;
 
 public interface IssueHistoryRepository extends JpaRepository<IssueHistory, Long> {
 
